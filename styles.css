@@ -176,10 +176,31 @@ body {
 
 /* Estilo para os preços */
 .produto p:last-of-type {
-    font-size: 1.75rem; /* Diminui o tamanho do preço */
+    font-size: 1.5rem; /* Diminui o tamanho do preço */
     font-weight: bold; /* Mantém o preço em negrito */
-    color: #000; /* Preço em preto */
+    color: #333; /* Cor cinza escuro, mais suave */
     margin-top: 10px; /* Pequeno espaçamento superior */
+    margin-bottom: 15px; /* Espaçamento abaixo do preço */
+}
+
+/* Estilo do botão de compra */
+.produto a.btn {
+    background-color: #FFA500; /* Muda para laranja para combinar com o layout */
+    color: #fff; /* Texto branco para contraste */
+    border-radius: 25px; /* Arredonda os cantos do botão */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.produto a.btn:hover {
+    background-color: #FF8C00; /* Cor laranja escura ao passar o mouse */
+    color: #fff;
 }
 
 /* Paginação Geral */
