@@ -176,10 +176,10 @@ body {
 
 /* Estilo para os preços */
 .produto p:last-of-type {
-    font-size: 2rem; /* Aumenta o tamanho do preço */
-    font-weight: bold; /* Coloca o preço em negrito para mais destaque */
-    color: #000; /* Mantém o preço em preto */
-    margin-top: 10px; /* Adiciona um pequeno espaçamento superior */
+    font-size: 1.75rem; /* Diminui o tamanho do preço */
+    font-weight: bold; /* Mantém o preço em negrito */
+    color: #000; /* Preço em preto */
+    margin-top: 10px; /* Pequeno espaçamento superior */
 }
 
 /* Paginação Geral */
