@@ -198,10 +198,11 @@ body {
     background-color: #FF8C00;
 }
 
-/* Paginação */
+/* Paginação Geral */
 .pagination {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Permite que os números de página se quebrem em linhas */
     padding-left: 0;
     list-style: none;
     border-radius: 0.25rem;
@@ -209,7 +210,7 @@ body {
 }
 
 .page-item {
-    margin: 0 5px;
+    margin: 5px; /* Pequeno espaço entre os números */
 }
 
 .page-link {
@@ -219,6 +220,8 @@ body {
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
     border-radius: 4px;
+    min-width: 40px; /* Define uma largura mínima para os números de página */
+    text-align: center;
 }
 
 .page-link:hover {
@@ -231,4 +234,20 @@ body {
     color: #fff;
     background-color: #FF8C00;
     border-color: #FF8C00;
+}
+
+/* Responsivo: Ajuste para telas menores */
+@media (max-width: 576px) {
+    .pagination {
+        font-size: 14px; /* Diminui o tamanho da fonte em telas pequenas */
+    }
+
+    .page-link {
+        padding: 0.25rem 0.5rem; /* Reduz o espaçamento interno dos números */
+        min-width: 30px; /* Reduz a largura mínima para os números de página */
+    }
+
+    .page-item {
+        margin: 3px; /* Reduz o espaço entre os números */
+    }
 }
