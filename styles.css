@@ -174,29 +174,12 @@ body {
     min-height: 50px;
 }
 
-.produto p {
-    font-size: 1.5rem; /* Aumenta o tamanho do preço */
-    color: #000; /* Garante que o preço fique com uma cor visível */
-    font-weight: bold; /* Destaca o preço com negrito */
-}
-
-
-.produto a.btn {
-    background-color: #FFA500;
-    color: #fff;
-    border-radius: 25px;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.produto a.btn:hover {
-    background-color: #FF8C00;
+/* Estilo para os preços */
+.produto p:last-of-type {
+    font-size: 2rem; /* Aumenta o tamanho do preço */
+    font-weight: bold; /* Coloca o preço em negrito para mais destaque */
+    color: #000; /* Mantém o preço em preto */
+    margin-top: 10px; /* Adiciona um pequeno espaçamento superior */
 }
 
 /* Paginação Geral */
